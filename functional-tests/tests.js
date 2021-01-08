@@ -19,24 +19,24 @@ fixture `GettingStarted`// declare the fixture
             .expect(Selector(userDashboardPage.h1()).innerText).eql('Hello, ' + user.name)
     })
  
-//create a test and place your code there
-// test('Create an Organization', async t1 => {
-//     await t1  
-//         .click(userDashboardPage.createOrganizationButton())
-//         .typeText(userDashboardPage.organizerNameField(), Math.random().toString(36).substring(2, 15))
-//         .typeText(userDashboardPage.organizerEmailField(), faker.internet.email())
-//         .click(userDashboardPage.hopinOrganizationButton())
+create a test and place your code there
+test('Create an Organization', async t1 => {
+    await t1  
+        .click(userDashboardPage.createOrganizationButton())
+        .typeText(userDashboardPage.organizerNameField(), Math.random().toString(36).substring(2, 15))
+        .typeText(userDashboardPage.organizerEmailField(), faker.internet.email())
+        .click(userDashboardPage.hopinOrganizationButton())
 
-// })
+})
 
-// test('Create an Event', async t2 => {
-//     await t2
-//         .click(userDashboardPage.hopinOrganizationButton())
-//         .click(organizerDashboardPage.createEventButton())
-//         .typeText(organizerDashboardPage.eventNameField(), Math.random().toString(36).substring(2, 15))
-//         .click(organizerDashboardPage.eventTypePublic())
-//         .click(organizerDashboardPage.createEventButton2())
-// })
+test('Create an Event', async t2 => {
+    await t2
+        .click(userDashboardPage.hopinOrganizationButton())
+        .click(organizerDashboardPage.createEventButton())
+        .typeText(organizerDashboardPage.eventNameField(), Math.random().toString(36).substring(2, 15))
+        .click(organizerDashboardPage.eventTypePublic())
+        .click(organizerDashboardPage.createEventButton2())
+})
 
 test('Create a Session', async t3 => {
     await t3
