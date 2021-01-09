@@ -19,7 +19,7 @@ fixture `GettingStarted`// declare the fixture
             .expect(Selector(userDashboardPage.h1()).innerText).eql('Hello, ' + user.name)
     })
  
-create a test and place your code there
+// create a test and place your code there
 test('Create an Organization', async t1 => {
     await t1  
         .click(userDashboardPage.createOrganizationButton())
